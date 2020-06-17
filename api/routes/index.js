@@ -10,4 +10,6 @@ router
   .put(taskController.taskUpdateOne)
   .delete(taskController.taskDeleteOne);
 
+router.route("/task/updateStatus/:taskId").put(taskController.taskUpdateOne);
+
 module.exports = router;
